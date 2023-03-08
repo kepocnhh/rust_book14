@@ -3,4 +3,5 @@
 !/tests
 !.gitignore
 !Cargo.toml
+!LICENSE
 !README.md
