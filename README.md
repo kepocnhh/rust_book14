@@ -5,6 +5,7 @@ Rust book: chapter [14](https://doc.rust-lang.org/book/ch14-00-more-about-cargo.
 ---
 Help:
 - [Profiles](https://doc.rust-lang.org/cargo/reference/profiles.html)
+- [Manifest](https://doc.rust-lang.org/cargo/reference/manifest.html)
 
 ---
 Check documentation
