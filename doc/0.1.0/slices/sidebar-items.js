@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"fn":[["get_first_or_else","Returns the contained first value or computes it from a closure. See: [`Option::unwrap_or_else`]"]]};
