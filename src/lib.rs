@@ -1,4 +1,8 @@
+//! `Rust` book lessons.
+//! Chapter [14](https://doc.rust-lang.org/book/ch14-00-more-about-cargo.html).
+
 /// Returns the contained first value or computes it from a closure.
+/// See: [`Option::unwrap_or_else`]
 ///
 /// # Examples
 ///
@@ -20,6 +24,7 @@ pub fn get_first_or_else<'a, T, F: FnOnce() -> &'a T>(list: &'a Vec<T>, f: F) ->
 }
 
 /// Returns the contained first value or a provided default.
+/// See: [`Option::unwrap_or`]
 ///
 /// # Examples
 ///
@@ -40,7 +45,11 @@ pub fn get_first_or<'a, T>(list: &'a Vec<T>, default: &'a T) -> &'a T {
     // return list.get(0).unwrap_or(default);
 }
 
+/// [`Some(value)`]: Some
+/// [`Err(err)`]: Err
+///
 /// Returns the contained first [`Some(value)`] or a provided [`Err(err)`].
+/// See: [`Option::ok_or`]
 ///
 /// # Errors
 ///
@@ -66,6 +75,7 @@ pub fn get_first_or_error<T, U>(list: &Vec<T>, err: U) -> Result<&T, U> {
 }
 
 /// Returns the contained first value or panics with a `msg`.
+/// See: [`Option::expect`]
 ///
 /// # Panics
 ///
